@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.block1, .block6 {
+    position: fixed;
+    width: 100vw;
+    height: 150px;
+    background: #c7d9f1;
+    border-bottom: solid 1px black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.block1 {
+    top: 0;
+}
+
+.block6 {
+    bottom: 0;
+    border-top: solid 1px black;
+}
+
+.block1 .box, .block6 .box {
+    float: left;
+}
+
+.block1 .infoblock, .block6 .info_menu {
+    float: right;
+    max-width: 50%;
+}
+
+.block2, .block4 {
+    width: 270px;
+    height: calc(100vh - 300px);
+    background: #FFD700;
+    position: fixed;
+    top: 150px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.block2 {
+    left: 0;
+}
+
+.block4 {
+    right: 0;
+}
+
+.block3 {
+    width: calc(100vw - 540px);
+    height: calc(100vh - 360px);
+    background: white;
+    position: fixed;
+    top: 150px;
+    left: 270px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+
+.block3 .image {
+    display: inline-block;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    vertical-align: top; /* помогает выровнять изображения в строке */
+}
+
+.block5 {
+    width: calc(100vw - 270px);
+    height: 60px;
+    background: #e0f5d1;
+    position: fixed;
+    top: calc(100vh - 210px);
+    text-align: center;
+    line-height: 60px;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+.box {
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.infoblock, .info_menu {
+    text-align: right;
+    margin-right: 10%;
+}
