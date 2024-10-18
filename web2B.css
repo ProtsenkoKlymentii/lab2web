@@ -6,8 +6,8 @@ html, body {
 }
 
 .block1, .block6 {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     width: 100vw;
     height: 150px;
@@ -81,8 +81,8 @@ html, body {
     border-bottom: solid 1px black;
 }
 
-.image{
-    width:250px;
+.image {
+    width: 250px;
     height: 250px;
 }
 
@@ -99,18 +99,18 @@ html, body {
     max-width: 50%;
     overflow-y: auto;
     margin-right: 10%;
+    grid-column: 2;
 }
 
 .info_menu {
-    flex: 1;
     text-align: left;
-    max-width: 60%; /
+    max-width: 60%;
 }
 
 .menu-columns {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }
 
 .column {
